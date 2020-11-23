@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skaičiuoklė</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <section>
+        <div class="header">
+            <h2>PVM apskaičiavimas</h2>
+            <p>21%, 9% tarifai, mokesčių apskaičiavimas, išskaičiavimas</p>
+        </div>
+       <div class="container">
+        <form>
+            <div class="input select">
+                <label>PVM tarifas</label>
+                <select name="pvm" id="pvm">
+                    <option value="1.21">21%</option>
+                    <option value="1.09">9%</option>
+                </select>
+            </div>
+            <div class="input">
+                <label>Kaina be PVM</label>
+                <input id="withoutPvmResult" type="text" value="">
+            </div>
+            <div class="input">
+                <label>Kaina su PVM</label>
+                <input id="withPvmResult" type="text" value="">
+            </div>
+            <div class="input">
+                <label>PVM</label>
+                <input id="pvmResult" type="text" value="" readonly>
+            </div>
+        </form>
+        <div class="button">
+            <button id="button">Apskaičiuoti</button>
+        </div>
+       </div>
+    </section>
+
+</body>
+
+</html>
